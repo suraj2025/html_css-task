@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(126, 17, 88);
+            height: 600px;
+            width: 80%;
+            margin-left: 10%;
+            
+        }
+        .in-container{
+            background-color: rgba(69, 17, 51, 0.561);
+            height: 500px;
+            width: 600px;
+          
+        }
+        label{
+            color: white;
+            font-weight: bold;
+        }
+        #form{
+            margin: 20%;
+            margin-top: 30px;
+        }
+        input[type=submit] {
+            background-color:white;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 18px;
+           width: 80%;
+           margin: 20px;
+  /* float: right; */
+        }
+        .col1 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.col2 {
+  float: left;
+  width: 75%;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="in-container">
+            <div id="form">
+                
+                <form action="">
+                    <div class="row"><div class="col1"><label for="">Name: </label> </div>
+                    <div class="col2"><input type="text" value="Your name"></div></div>
+                    <div class="row"><div class="col1"><label for="">Email: </label> </div>
+                    <div class="col2"><input type="email" value="Your email"></div></div>
+                    <div class="row"><div class="col1"><label for="">Password: </label></div>
+                    <div class="col2"><input type="password"></div></div>
+                    <div class="row"><div class="col1"><label for="">Phone No: </label></div>
+                    <div class="col2"><input type="tel"></div></div>
+                    <div class="row"><div class="col1"><label for="">Gender: </label> </div>
+                    <div class="col2">
+                        <label for="">Male:</label> <input type="radio">
+                        <label for="">Female:</label> <input type="radio">
+                        <label for="">Other:</label> <input type="radio">
+                    </div></div>
+                    <div class="row"><div class="col1"><label for="">Language: </label></div>
+                    <div class="col2">
+                        <select name="" id="">
+                            <option value="select">Select Language</option>
+                            <option value="select">English</option>
+                            <option value="select">Hindi</option>
+                            <option value="select">Bhojpuri</option>
+                        </select>
+                    </div></div>
+                    <div class="row"><div class="col1"><label for="">Zipcode: </label> </div>
+                    <div class="col2"><input type="text"></div></div>
+                    <div class="row"><div class="col1"><label for="">About: </label></div>
+                    <div class="col2"><textarea name="" id="" cols="30" rows="2" >write about yourself...</textarea></div></div>
+
+                   <div class="row"><input type="submit" value="Register"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
